@@ -1,27 +1,3 @@
-Claro\! Integrar um botão de "copiar" na sua página, que já utiliza Tailwind CSS, é bem simples.
-
-Fiz as alterações diretamente no código que você forneceu. As mudanças são:
-
-1.  **HTML:** Adicionei a estrutura para a Chave PIX e o botão "Copiar".
-2.  **JavaScript:** Incluí a lógica para a função de copiar.
-
-Abaixo está o seu código modificado. Você pode substituir todo o conteúdo da sua página por este.
-
-### O que foi alterado:
-
-  * **Na seção de Pagamento com PIX:**
-      * A chave PIX agora está dentro de um `<span>` com o id `chavePixParaCopiar`. **Lembre-se de colocar sua chave real neste local.**
-      * Um novo `<button>` com o id `btnCopiarPix` foi adicionado. Ele já está estilizado com Tailwind CSS para combinar com o design da sua página.
-  * **No final do `<script>`:**
-      * Adicionei um novo bloco de código que controla a funcionalidade do botão de copiar. Ele usa a API `navigator.clipboard` para copiar o texto e avisa o usuário mudando o texto do botão para "Copiado\!".
-
------
-
-### Código da Página Modificada:
-
-Copie e cole este código completo para substituir o seu arquivo.
-
-```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -253,4 +229,3 @@ Copie e cole este código completo para substituir o seu arquivo.
     </script>
 </body>
 </html>
-```
