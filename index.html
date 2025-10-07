@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panbox - Planos de Assinatura</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white antialiased">
+
+    <!-- Container Principal -->
+    <div class="container mx-auto px-4 py-8 md:py-16">
+
+        <!-- Header com Logo e Título -->
+        <header class="text-center mb-12">
+            <div class="inline-flex items-center justify-center bg-blue-600 p-4 rounded-full mb-4 shadow-lg">
+                <!-- Espaço para a Logo -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104l-2.28 2.28-1.297 1.297A2.25 2.25 0 005.625 8.25v1.5a2.25 2.25 0 002.25 2.25h1.5a2.25 2.25 0 002.25-2.25v-1.5a2.25 2.25 0 00-.75-1.555l-1.297-1.297-2.28-2.28zM9.75 3.104l6.363 6.363m-6.363-6.363l-6.363 6.363" />
+                     <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
+                Panbox
+            </h1>
+            <p class="text-gray-400 mt-2 text-lg">Escolha o plano ideal para você e sua família.</p>
+        </header>
+
+        <!-- Seção de Planos -->
+        <main class="max-w-2xl mx-auto">
+
+            <!-- Card: Plano Exclusivo Dual App -->
+            <div class="bg-gray-800/50 backdrop-blur-sm border border-blue-500/50 rounded-2xl p-8 flex flex-col shadow-2xl shadow-blue-500/10">
+                <div class="flex-grow">
+                    <h2 class="text-3xl font-bold text-center text-blue-400">Nosso Plano Exclusivo</h2>
+                    <p class="text-gray-400 mt-2 text-center">Acesso Dual APP: A melhor experiência, com mais estabilidade e acesso a 2 apps.</p>
+                    <div class="my-6 text-center">
+                        <span class="text-5xl font-extrabold">R$34<span class="text-3xl">,90</span></span>
+                        <span class="text-gray-400">/mês</span>
+                    </div>
+                    <ul class="space-y-3 text-gray-300 mb-8 max-w-md mx-auto">
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-blue-400 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span><strong class="text-white">Acesso a 2 Apps:</strong> Tenha sempre uma alternativa para não perder nada.</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-blue-400 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                             <span><strong class="text-white">Mais Estabilidade:</strong> Menos interrupções e uma experiência mais fluida.</span>
+                        </li>
+                        <li class="flex items-center">
+                           <svg class="w-5 h-5 text-blue-400 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path></svg>
+                            <span>Ponto adicional por apenas R$ 17,90 (até 3 no total).</span>
+                        </li>
+                         <li class="flex items-center">
+                           <svg class="w-5 h-5 text-blue-400 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                           <span>Conteúdo completo: Canais, Filmes, Séries e Adulto (opcional).</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        
+        <!-- Seção de Checkout e Pagamento -->
+        <section id="checkout-section" class="max-w-2xl mx-auto mt-12 bg-gray-800 p-8 rounded-2xl">
+            <h3 id="checkout-plan-title" class="text-2xl font-bold text-center mb-6">Monte seu pacote e pague como quiser</h3>
+            
+            <!-- Seletor de Pontos -->
+            <div class="flex items-center justify-center space-x-6 mb-6">
+                <label class="text-lg">Pontos:</label>
+                <div class="flex items-center space-x-4">
+                    <button id="decrease-points" class="bg-gray-700 hover:bg-gray-600 rounded-full w-10 h-10 text-2xl transition-colors">-</button>
+                    <span id="points-quantity" class="text-2xl font-bold w-8 text-center">1</span>
+                    <button id="increase-points" class="bg-gray-700 hover:bg-gray-600 rounded-full w-10 h-10 text-2xl transition-colors">+</button>
+                </div>
+            </div>
+
+            <!-- Total -->
+            <div class="text-center my-8">
+                <p class="text-gray-400 text-lg">VALOR TOTAL</p>
+                <p id="total-price" class="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">R$0,00</p>
+            </div>
+            
+            <!-- Opções de Pagamento -->
+            <div class="space-y-4">
+                <h4 class="text-lg font-semibold text-center text-gray-300 border-b border-gray-700 pb-2 mb-4">Escolha como pagar</h4>
+                <!-- Pagamento com Cartão -->
+                <a id="credit-card-link" href="#" target="_blank" class="block w-full text-center bg-gradient-to-r from-purple-500 to-indigo-600 hover:from-purple-600 hover:to-indigo-700 text-white font-bold text-lg py-4 px-10 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300">
+                    Pagar com Cartão de Crédito
+                </a>
+                
+                <!-- Pagamento com PIX -->
+                <div class="bg-gray-900/50 p-4 rounded-lg mt-4 text-center">
+                    <h5 class="font-semibold">Ou pague com PIX</h5>
+                    <p id="pix-details" class="text-gray-400 mt-2">Selecione um plano para ver o valor.</p>
+                     <p class="font-mono text-sm text-gray-500 mt-2">Chave PIX: (XX) XXXXX-XXXX</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="text-center mt-16">
+             <div class="mt-8">
+                 <a href="https://wa.me/SEUNUMEROAQUI?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20planos%20da%20Panbox." 
+                   target="_blank"
+                   class="inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition-all duration-300">
+                    Falar com Suporte no WhatsApp
+                </a>
+            </div>
+             <p class="text-gray-600 text-sm mt-8">&copy; 2024 Panbox. Todos os direitos reservados.</p>
+        </footer>
+
+    </div>
+
+    <!-- Botão Flutuante do WhatsApp -->
+    <a href="https://wa.me/SEUNUMEROAQUI?text=Olá!%20Gostaria%20de%20assinar%20o%20plano%20Dual%20App." 
+       target="_blank" 
+       class="md:hidden fixed bottom-5 right-5 bg-green-500 w-16 h-16 rounded-full flex items-center justify-center text-white shadow-lg transform hover:scale-110 transition-transform duration-300 z-50">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.894 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.886-.001 2.269.654 4.288 1.902 5.941l-1.025 3.748 3.847-1.003zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01s-.521.074-.792.372c-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+        </svg>
+    </a>
+
+    <script>
+        const planData = {
+            dual: {
+                name: 'Acesso Dual APP',
+                basePrice: 34.90,
+                extraPointPrice: 17.90,
+                // IMPORTANTE: Substitua com seus links de pagamento reais
+                links: [
+                    'https://SEU-LINK-DE-PAGAMENTO/dual-1-ponto',
+                    'https://SEU-LINK-DE-PAGAMENTO/dual-2-pontos',
+                    'https://SEU-LINK-DE-PAGAMENTO/dual-3-pontos'
+                ]
+            }
+        };
+
+        let currentPlan = 'dual';
+        let currentPoints = 1;
+
+        const checkoutSection = document.getElementById('checkout-section');
+        const checkoutPlanTitle = document.getElementById('checkout-plan-title');
+        const decreasePointsBtn = document.getElementById('decrease-points');
+        const increasePointsBtn = document.getElementById('increase-points');
+        const pointsQuantityEl = document.getElementById('points-quantity');
+        const totalPriceEl = document.getElementById('total-price');
+        const creditCardLink = document.getElementById('credit-card-link');
+        const pixDetailsEl = document.getElementById('pix-details');
+        
+        function updateCheckout() {
+            if (!currentPlan) return;
+
+            // Garante que os pontos fiquem entre 1 e 3
+            if (currentPoints < 1) currentPoints = 1;
+            if (currentPoints > 3) currentPoints = 3;
+
+            const plan = planData[currentPlan];
+            const total = plan.basePrice + (plan.extraPointPrice * (currentPoints - 1));
+
+            // Atualiza a UI
+            pointsQuantityEl.textContent = currentPoints;
+            totalPriceEl.textContent = `R$${total.toFixed(2).replace('.', ',')}`;
+            
+            // Atualiza os links e textos de pagamento
+            creditCardLink.href = plan.links[currentPoints - 1];
+            pixDetailsEl.innerHTML = `Faça uma transferência de <strong class="text-white">R$${total.toFixed(2).replace('.', ',')}</strong> para a chave abaixo.`;
+
+            // Desabilita/habilita botões
+            decreasePointsBtn.disabled = currentPoints === 1;
+            decreasePointsBtn.classList.toggle('opacity-50', currentPoints === 1);
+            increasePointsBtn.disabled = currentPoints === 3;
+            increasePointsBtn.classList.toggle('opacity-50', currentPoints === 3);
+        }
+
+        decreasePointsBtn.addEventListener('click', () => {
+            currentPoints--;
+            updateCheckout();
+        });
+
+        increasePointsBtn.addEventListener('click', () => {
+            currentPoints++;
+            updateCheckout();
+        });
+
+        // Inicia o checkout assim que a página carrega
+        document.addEventListener('DOMContentLoaded', updateCheckout);
+
+    </script>
+</body>
+</html>
+
